@@ -1,0 +1,9 @@
+#1
+>>> import pandas as cd
+>>> irisdata=cd.read_csv('iris.csv')
+>>> def custom_function():
+...     iris_1=irisdata.iloc[1:150,:]
+...     iris_2=iris_1.iloc[::2]
+...     return iris_2
+>>> print(custom_function())
+
