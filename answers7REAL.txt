@@ -7,3 +7,17 @@
 ...     return iris_2
 >>> print(custom_function())
 
+#2
+
+#return the number of observations for a given species included in the data set
+>>> def custom_function():
+...     data=pd.read_csv("iris.csv")
+...     return (data['Species'].value_counts())
+
+#return a dataframe for flowers with Sepal.Width greater than a value specified by the function user
+>>> def custom_function(x):
+...     return data.loc[data['Sepal.Width']>x]
+
+#write the data for a given species to a comma-delimited file with the given species name as the file name
+data.loc[data['Species']=='virginica']**
+How to give it a name with .to_csv??**
