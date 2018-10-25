@@ -19,5 +19,9 @@
 ...     return data.loc[data['Sepal.Width']>x]
 
 #write the data for a given species to a comma-delimited file with the given species name as the file name
-data.loc[data['Species']=='virginica']**
-How to give it a name with .to_csv??**
+import pandas
+data=pandas.read_csv("iris.csv")
+def custom_function(x):
+        y=data.loc[data['Species']==x]
+        y.to_csv('%s.csv' % x)
+print(custom_function('setosa'))
