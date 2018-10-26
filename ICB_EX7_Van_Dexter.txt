@@ -1,0 +1,14 @@
+import pandas as pd
+iris = pd.read_csv('iris.csv')
+def odd(X):
+    odds = (X).iloc[:-2:2]
+    print(odds)
+odd(iris)
+def speciescounter(X):
+    unique = (X).Species.value_counts()
+    print(unique)
+speciescounter(iris)
+def sepals(X):
+    width = (X)[(X)['Sepal.Width']>3.5]
+    print(width)
+sepals(iris)
